@@ -1,37 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
-import {Home} from "./Components/home.js"
-import {Login} from "./Components/Login.js"
-import {Register} from "./Components/Register.js"
-import {Seller} from "./Components/Seller.js"
-import {Bidder} from "./Components/Bidder.js"
-import {Admin} from "./Components/Admin.js"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./components/Home.js"
+import Register from './components/Register';
+import Login from './components/Login';
+import MyProds from './components/MyProds';
+import EditProd from './components/EditProd';
+import AddProd from './components/AddProd';
+import Messenger from './components/Messenger';
+import AllProducts from './components/AllProducts';
+import Cart from './components/Cart';
+import Order from './components/Order';
 
 function App() {
   return (
-        <>
-      {<BrowserRouter>
+    <div>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/seller" element={<Seller />} />
-          <Route path="/bidder" element={<Bidder />} />
-          <Route path="/Admin" element={<Admin />} />
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/editProd" element={<EditProd/>}></Route>
+          <Route path="/addProd" element={<AddProd/>}></Route>
+          <Route path="/myProds" element={<MyProds/>}></Route>
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/register" element={<Register/>}></Route>
+          <Route path="/messenger" element={<Messenger/>}></Route>
+          <Route path="/allProds" element={<AllProducts/>}></Route>
+          <Route path="/cart" element={<Cart/>}></Route>
+          <Route path="/order" element={<Order/>}></Route>
         </Routes>
-      </BrowserRouter>}
-    </>
-/*
-<div>
-      <Login/>
-      <Register/>
-</div>
-      */
+      </BrowserRouter>
+    </div>
   );
 }
 

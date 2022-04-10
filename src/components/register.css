@@ -1,0 +1,36 @@
+.ip{
+    border-color: indigo;
+    padding-top: 2px;
+    border-radius: 125px;
+    background-color:rgba(red, rgba(83, 98, 69, 0.379), blue, alpha);
+    margin-top: 5px;
+    width: 525px;
+    height: 55px;
+}
+
+.ip:hover{
+    background-color: blanchedalmond;
+}
+
+.rd{
+    border-color: indigo;
+    margin-top: 5px;
+}
+
+.btn{
+    color: darkcyan;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 55px;
+    margin-right: auto;
+    border-color: black;
+    width: 225px;
+    height: 35px
+}
+
+.d{
+    background-image: url('https://srbps.com/wp-content/uploads/2020/09/Best-Free-WordPress-Registration-Plugins.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
